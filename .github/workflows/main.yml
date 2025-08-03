@@ -298,6 +298,17 @@
               }
             - {
                 vendor: "CYD",
+                name: "CYD-8048S070C",
+                description: "(ESP32S3, 4.3in, 800x480, Capacitive)",
+                link: "",
+                family: "ESP32-S3",
+                env: "CYD-8048S070C",
+                partitions: {
+                  bootloader_addr: "0x0",
+                },
+              }
+            - {
+                vendor: "CYD",
                 name: "CYD-8048W550C",
                 description: "(ESP32S3, 5.5in, 800x480, Capacitive)",
                 link: "",
