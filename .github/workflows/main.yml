@@ -296,7 +296,7 @@
                   bootloader_addr: "0x0",
                 },
               }
-              {
+            - {
                 vendor: "CYD",
                 name: "CYD-8048S070C",
                 description: "(ESP32S3, 4.3in, 800x480, Capacitive)",
