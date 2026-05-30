@@ -2,7 +2,7 @@ name: Deploy to Pages
 
 on:
   push:
-    branches: [WebPage]
+    branches: [WebPage, WebPage-add-80480Z070C]
   workflow_dispatch:
 
 permissions:
@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: WebPage
+          ref: ${{ github.ref_name }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

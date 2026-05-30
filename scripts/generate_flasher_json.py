@@ -44,8 +44,8 @@ if os.environ.get("CI") != "true":
     _ssl_ctx.check_hostname = False
     _ssl_ctx.verify_mode = ssl.CERT_NONE
 
-REPO = "bmorcelli/Launcher"
-ASSET_LINK = "https://github.com/bmorcelli/Launcher/releases/download"
+REPO = os.environ.get("LAUNCHER_REPO") or os.environ.get("GITHUB_REPOSITORY") or "bmorcelli/Launcher"
+ASSET_LINK = f"https://github.com/{REPO}/releases/download"
 JSDELIVR_BASE = f"https://launcher-proxy.bmorcelli.workers.dev/?url="
 GITHUB_API = "https://api.github.com"
 
